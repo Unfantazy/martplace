@@ -1,3 +1,20 @@
 $grey: #eff1f5;
 $blue: #0674ec;
 $main: #333;
+
+
+@mixin f400 {
+  font-family: 'Quicksand';
+  font-weight: 400;
+}
+
+@mixin f500 {
+  font-family: 'Quicksand';
+  font-weight: 500;
+}
+
+@mixin f700 {
+  font-family: 'Quicksand';
+  font-weight: 700;
+
+}
