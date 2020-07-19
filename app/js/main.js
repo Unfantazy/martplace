@@ -14,5 +14,10 @@ $(function () {
   });
 
 
+  // if ($('.newest-products__filter-inner').length) {
+  //   var mixer = mixitup('.newest-products__filter-inner');
+  // }
+
+  var mixer = mixitup('.newest-products__filter-inner');
 
 });
