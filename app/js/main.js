@@ -13,6 +13,14 @@ $(function () {
     nextArrow: '<button type="button" class="slick-btn slick-next lnr-chevron-right" alt=""></button>',
   });
 
+  $('.followers__slider-items').slick({
+    appendArrows: $('.followers__title'),
+    prevArrow: '<button type="button" class="slick-btn slick-prev lnr-chevron-left" alt=""></button>',
+    nextArrow: '<button type="button" class="slick-btn slick-next lnr-chevron-right" alt=""></button>',
+    slidesToShow: 3,
+    slidesToScroll: 3,
+  });
+
 
   // if ($('.newest-products__filter-inner').length) {
   //   var mixer = mixitup('.newest-products__filter-inner');

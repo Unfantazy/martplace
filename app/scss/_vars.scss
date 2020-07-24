@@ -2,6 +2,10 @@ $grey: #eff1f5;
 $blue: #0674ec;
 $main: #333;
 
+@mixin f300 {
+  font-family: 'Quicksand';
+  font-weight: 300;
+}
 
 @mixin f400 {
   font-family: 'Quicksand';
