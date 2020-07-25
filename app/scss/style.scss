@@ -332,6 +332,7 @@
   box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
   max-width: 1140px;
   width: 100%;
+  @include f400;
 }
 
 
@@ -339,6 +340,7 @@
 .followers__title {
   margin-bottom: 48px;
   position: relative;
+  @include f400;
 
   .lnr-chevron-left {
     font-family: 'Linearicons-Free';
@@ -598,6 +600,7 @@
 
 .newest-products-title {
   margin-bottom: 30px;
+  @include f400;
 }
 
 .newest-products__filter-btns {
@@ -794,6 +797,8 @@
 .followers__title {
   margin-bottom: 50px;
 
+  @include f400;
+
   .slick-btn {
     background-color: $blue;
   }
@@ -914,6 +919,7 @@
   font-size: 36px;
   color: #000;
   margin-bottom: 35px;
+  @include f400;
   text-align: center;
 
   span {
@@ -996,6 +1002,7 @@
   .item__title {
     font-size: 24px;
     margin-bottom: 26px;
+    @include f400;
   }
 
   .item__text {
@@ -1005,7 +1012,82 @@
 }
 
 
-
-
-
 // why-choose end
+
+
+//sell-and-buy start
+
+.sell-and-buy__inner {
+  display: flex;
+  text-align: center;
+
+}
+
+.sell-and-buy__item-wrapper {
+  max-width: 615px;
+  margin: 0 auto;
+}
+
+.sell-and-buy__item {
+  max-width: 50%;
+  width: 100%;
+  color: #fff;
+  padding-bottom: 100px;
+
+  .item__icon {
+    padding-top: 100px;
+    margin-bottom: 50px;
+  }
+
+  .item__title {
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-weight: 400;
+  }
+
+  .item__text {
+    margin-bottom: 40px;
+
+    p {
+      line-height: 30px;
+    }
+  }
+
+  .item__link {
+    background-color: #fff;
+    color: $blue;
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 30px;
+
+  }
+}
+
+.sell-and-buy__sell {
+  background-color: $blue;
+}
+
+.sell-and-buy__buy {
+  background-color: #7347c1;
+}
+
+.sell-and-buy__buy {
+  background-image: url(../images/buy-bg.png);
+  // background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+  .item__link {
+    color: #7347c1;
+  }
+}
+
+.sell-and-buy__sell {
+  background-image: url(../images/sell-bg.png);
+  // background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+
+//sell-and-buy end
