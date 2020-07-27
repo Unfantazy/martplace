@@ -21,6 +21,11 @@ $(function () {
     slidesToScroll: 3,
   });
 
+  $('.feedback__slider').slick({
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    arrows: false,
+  });
 
   // if ($('.newest-products__filter-inner').length) {
   //   var mixer = mixitup('.newest-products__filter-inner');

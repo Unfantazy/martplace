@@ -961,7 +961,9 @@
   padding-bottom: 120px;
 }
 
-.why-choose__title {
+.why-choose__title,
+.feedback__title,
+.latest-news__title {
   font-size: 36px;
   color: #000;
   margin-bottom: 35px;
@@ -974,7 +976,9 @@
 
 }
 
-.why-choose__description {
+.why-choose__description,
+.feedback__text,
+.latest-news__text {
   margin: 0 auto;
   text-align: center;
   max-width: 686px;
@@ -1137,3 +1141,265 @@
 
 
 //sell-and-buy end
+
+// feedback start
+
+.feedback {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  .slick-list {
+    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+  }
+
+
+  .slick-slide slick-current slick-active {
+    width: 555px !important;
+  }
+
+  .feedback__link {
+    display: block;
+    max-width: 190px;
+    margin: 0 auto;
+    padding: 20px 33px;
+    background-color: $blue;
+    border-radius: 30px;
+    color: #fff;
+  }
+}
+
+.feedback__slider {
+  margin-bottom: 60px;
+}
+
+.slider__item {
+  max-width: 555px;
+  width: 100%;
+  // border-radius: 4px;
+  padding: 50px 40px;
+  border-left: 2px solid $blue;
+}
+
+.slider__item-author {
+  display: flex;
+  align-items: center;
+  margin-bottom: 29px;
+  padding-right: 235px;
+  position: relative;
+
+  .personal-avatar {
+    img {
+      object-fit: cover;
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &::after {
+    content: "\e83f";
+    font-family: 'Linearicons-Free';
+    position: absolute;
+    right: 0;
+    font-size: 60px;
+    color: #e8e8e8;
+  }
+
+  .personal-info {
+    .personal-name {
+      font-size: 20px;
+      @include f400;
+      color: #000;
+      margin-bottom: 10px;
+    }
+
+    .personal-profession {
+      font-size: 16px;
+      @include f400;
+      color: #555;
+    }
+  }
+}
+
+
+// feedback end
+
+// latest-news start
+.latest-news {
+  background-color: #eff1f5;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.latest-news__items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.latest-news__item {
+  max-width: 360px;
+  width: 100%;
+  background-color: #fff;
+
+  // &+.latest-news__item {
+  //   margin-left: 30px;
+  // }
+
+  .item__img {
+    img {
+      max-width: 360px;
+    }
+
+  }
+
+  // .item__inner {
+  //   padding: 30px;
+  // }
+
+  .item__title {
+    font-size: 22px;
+    @include f500;
+    color: #000;
+    margin-bottom: 30px;
+    padding: 30px 30px 0;
+  }
+
+  .item__text {
+    line-height: 29px;
+    color: #555;
+    padding: 0px 30px;
+  }
+
+  .latest-news__item-bottom {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ececec;
+    padding: 20px 30px;
+    font-size: 15px;
+    color: #7e7e7e;
+
+    .item-bottom__date {
+      padding-left: 25px;
+      position: relative;
+
+      &::before {
+        content: "\e864";
+        color: $blue;
+        font-size: 15px;
+        font-family: 'Linearicons-Free';
+        position: absolute;
+        left: 0;
+
+      }
+    }
+
+    .item-bottom__comments {
+      margin-right: 30px;
+      padding-left: 25px;
+      position: relative;
+
+      &::before {
+        content: "\e83f";
+        font-family: 'Linearicons-Free';
+        position: absolute;
+        left: 0;
+      }
+    }
+
+    .item-bottom__views {
+      padding-left: 23px;
+      position: relative;
+
+      &::before {
+        content: "\e81b";
+        font-family: 'Linearicons-Free';
+        position: absolute;
+        left: 0;
+      }
+
+    }
+  }
+
+  .item-bottom__info {
+    display: flex;
+    border-left: 1px solid #ececec;
+    padding-left: 30px;
+  }
+}
+
+// latest-news end
+
+// guarantee start
+
+.guarantee__inner {
+  display: flex;
+  justify-content: space-around
+}
+
+.guarantee__item {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  // max-width: 360px;
+  // width: 100%;
+  text-align: center;
+
+  &+.guarantee__item {
+    border-left: 1px solid #e8eaf3;
+    padding-left: 130px;
+  }
+}
+
+.guarantee__item-title {
+  font-size: 24px;
+  @include f400;
+  color: #000;
+  margin-top: 30px;
+
+  span {
+    color: $blue;
+  }
+}
+
+.support__title {
+  span {
+    color: #7347c1;
+  }
+}
+
+
+// guarantee end
+
+
+// join start
+
+.join {
+  background: linear-gradient(180deg, rgb(13, 62, 242) 0%, rgb(64, 48, 201) 46%, rgb(114, 33, 160) 100%);
+  padding-top: 110px;
+  padding-bottom: 110px;
+  color: #fff;
+  text-align: center;
+}
+
+.join__title {
+  font-size: 36px;
+  @include f400;
+  margin-bottom: 25px;
+}
+
+.join__text {
+  font-size: 18px;
+  @include f400;
+  margin-bottom: 50px;
+}
+
+.join__link {
+  display: block;
+  max-width: 190px;
+  background-color: #fff;
+  color: $blue;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 40px;
+  border-radius: 30px;
+}
+
+// join end
