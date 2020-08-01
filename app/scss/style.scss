@@ -519,21 +519,155 @@
 
 }
 
+.all-products__wrapper {
+  &:hover {
+    .all-products__menu {
+      height: 320px;
+      padding: 20px 20px 35px;
+      border-top: 1px solid $blue;
+      overflow: visible;
+      transition: all .3s;
+    }
+  }
+
+  .all-products__menu {
+    position: absolute;
+    top: 80px;
+    z-index: 1;
+    background-color: #fff;
+    width: 272px;
+    padding: 0;
+    border-top: none;
+    height: 0;
+    overflow: hidden;
+    border-radius: 2px;
+
+
+  }
+
+  .dropdown-all-products__list {
+    display: block;
+    color: #54667a;
+    font-size: 15px;
+    padding: 15px 10px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $blue;
+      color: #fff;
+      border-radius: 2px;
+    }
+  }
+}
+
+
+.wordpress__wrapper {
+
+  &:hover {
+    .dropdown-wordpress__menu {
+      height: 470px;
+      border-top: 1px solid $blue;
+      padding: 20px 20px 35px;
+      overflow: visible;
+      transition: all .3s;
+    }
+  }
+
+  .dropdown-wordpress__menu {
+    position: absolute;
+    top: 80px;
+    z-index: 1;
+    background-color: #fff;
+    width: 272px;
+    padding: 0;
+    border-top: none;
+    height: 0;
+    overflow: hidden;
+    border-radius: 2px;
+  }
+
+  .dropdown-wordpress__list {
+    display: block;
+    color: #54667a;
+    font-size: 15px;
+    padding: 15px 10px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $blue;
+      color: #fff;
+      border-radius: 2px;
+    }
+  }
+}
+
+.home__wrapper {
+  &:hover {
+    .dropdown-home__menu {
+      height: 180px;
+      border-top: 1px solid $blue;
+      padding: 20px 20px 35px;
+      overflow: visible;
+      transition: all .3s;
+    }
+  }
+
+  .dropdown-home__menu {
+    z-index: 10;
+    background-color: #fff;
+    width: 270px;
+    padding: 0;
+    border-top: none;
+    position: absolute;
+    top: 80px;
+    border-radius: 2px;
+    height: 0;
+    overflow: hidden;
+
+    .dropdown-home__list {
+      display: block;
+      color: #54667a;
+      font-size: 15px;
+      padding: 15px 10px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $blue;
+        color: #fff;
+        border-radius: 2px;
+      }
+    }
+  }
+}
+
+
 .menu__list {
+  display: flex;
+
+  .dropdown__wrapper {
+    height: 80px;
+    position: relative;
+  }
+
   li {
     display: inline-block;
     @include f500;
 
-    &+li {
-      margin-left: 25px;
+
+    &:hover {
+      color: #0674ec;
     }
   }
 
-  a {
-    text-transform: uppercase;
-    line-height: 42px;
-    font-size: 15px;
+  div {
+    padding: 0 12.5px;
+  }
 
+  a,
+  span {
+    text-transform: uppercase;
+    line-height: 80px;
+    font-size: 15px;
   }
 }
 
